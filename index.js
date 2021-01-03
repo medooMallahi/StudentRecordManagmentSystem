@@ -26,7 +26,7 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
 }
-const PORT = process.env.PORT || 7000;
+let PORT = process.env.PORT || 7000;
 
 const mongoDbUrl =
   "mongodb+srv://medoo:0592413118@rlck.ifnzw.mongodb.net/Rlck?retryWrites=true&w=majority";
