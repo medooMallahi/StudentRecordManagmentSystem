@@ -5,7 +5,7 @@ const fileUpload = require("../middleware/fileUpload");
 
 Router.post(
   "/api/users/register",
-  fileUpload.single("image"),
+  // fileUpload.single("image"),
   RegistrationRoutes.register
 );
 Router.post("/api/users/logIn", RegistrationRoutes.logIn);
