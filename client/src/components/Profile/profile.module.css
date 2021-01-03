@@ -1,0 +1,16 @@
+.image {
+  width: 200px;
+  height: 200px;
+  border-radius: 220px;
+}
+.container {
+  margin: 0 auto;
+  border: 1.5px solid #c93732;
+  box-sizing: border-box;
+  margin-top: 150px;
+  padding: 25px;
+  text-align: center;
+  min-height: 50%;
+  max-width: 50%;
+  border-radius: 200px;
+}

@@ -1,0 +1,51 @@
+.Header {
+  background: linear-gradient(89deg, red 0%, #04c8de 100%);
+}
+
+.Headercontainer {
+  display: flex;
+  height: 5vh;
+}
+
+.leftSide {
+  flex-grow: 1;
+}
+
+.LogoLink {
+  display: inline;
+  font-size: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+.navigations {
+  display: inline;
+  margin-left: 30px;
+}
+
+.item {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.itemsDev {
+  display: inline-block;
+}
+
+.featuers {
+  padding-top: 2px;
+  font-size: 28px;
+}
+
+.link {
+  text-decoration: none;
+  margin-left: 8px;
+  margin-right: 20px;
+  color: black;
+  font-weight: 500;
+}
+
+.menuContainer {
+  display: inline;
+}

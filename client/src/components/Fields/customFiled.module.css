@@ -1,0 +1,16 @@
+.inputLabel {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: white;
+}
+.inputField {
+  background-color: transparent;
+  width: 300px;
+  padding: 5px;
+}
+.ErrorShowing {
+  margin-bottom: 20px;
+}

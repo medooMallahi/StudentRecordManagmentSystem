@@ -1,0 +1,41 @@
+.full_page {
+  height: 100vh;
+  background: linear-gradient(89deg, red 0%, #04c8de 100%);
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  z-index: 0;
+}
+.particls {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  z-index: -1;
+}
+.container {
+  margin: 0 auto;
+  border: 1.5px solid #c93732;
+  box-sizing: border-box;
+  margin-top: 150px;
+  padding: 25px;
+  text-align: center;
+  min-height: 50%;
+  max-width: 50%;
+}
+.submitButton {
+  background-color: #44c767;
+  border-radius: 28px;
+  border: 1px solid #18ab29;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+}
