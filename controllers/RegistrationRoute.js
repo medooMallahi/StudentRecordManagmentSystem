@@ -7,6 +7,7 @@ exports.register = (req, res, next) => {
     new Date().getTime().toString(36) + Math.random().toString(36).slice(2);
 
   console.log(req.body);
+  console.log(req.file.path);
   bycrpt
     .hash(req.body.password, 10)
     .then((hashed) => {
@@ -16,7 +17,7 @@ exports.register = (req, res, next) => {
         email: req.body.email,
         password: req.body.password,
         studentId,
-        // imageUrl: req.file.path,
+        imageUrl: req.file.path,
       });
       user
         .save()

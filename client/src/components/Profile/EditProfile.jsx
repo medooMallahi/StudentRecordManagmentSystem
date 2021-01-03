@@ -22,23 +22,23 @@ const particlesOptions = {
 };
 
 class EditProfile extends Component {
-  // state = {
-  //   image: null,
-  // };
+  state = {
+    image: null,
+  };
 
   formSubmition = (values) => {
-    // const { name, email, password } = values;
-    // const image = this.state.image;
-
-    // const formData = new FormData();
-    // formData.append("name", name);
-    // formData.append("email", email);
-    // formData.append("password", password);
-    // formData.append("image", image);
-
     const { name, email, password } = values;
+    const image = this.state.image;
 
-    let formData = { name, email, password };
+    const formData = new FormData();
+    formData.append("name", name);
+    formData.append("email", email);
+    formData.append("password", password);
+    formData.append("image", image);
+
+    // const { name, email, password } = values;
+
+    // let formData = { name, email, password };
 
     this.props.signUp(formData);
     this.props.history.push("/");
@@ -71,7 +71,7 @@ class EditProfile extends Component {
                 name="password"
                 component={CustomField}
               />
-              {/* <Dropzone
+              <Dropzone
                 onDrop={(acceptedFiles) =>
                   this.setState({ image: acceptedFiles[0] })
                 }
@@ -84,7 +84,7 @@ class EditProfile extends Component {
                     </div>
                   </section>
                 )}
-              </Dropzone> */}
+              </Dropzone>
 
               <button type="submit" className={styles.submitButton}>
                 Send
